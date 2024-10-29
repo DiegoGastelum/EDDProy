@@ -196,7 +196,7 @@ namespace EDDemo.Estructuras_No_Lineales
                     MessageBox.Show($"El valor {valor} no se encuentra en el árbol");
                 }
 
-                txtDato.Text = ""; // Limpiar el campo de texto después de la búsqueda
+                txtDato.Text = ""; 
             }
             else
             {
