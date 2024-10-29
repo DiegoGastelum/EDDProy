@@ -98,7 +98,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // btnGrafica
             // 
             this.btnGrafica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGrafica.Location = new System.Drawing.Point(504, 203);
+            this.btnGrafica.Location = new System.Drawing.Point(591, 21);
             this.btnGrafica.Margin = new System.Windows.Forms.Padding(2);
             this.btnGrafica.Name = "btnGrafica";
             this.btnGrafica.Size = new System.Drawing.Size(83, 29);
