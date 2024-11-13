@@ -55,13 +55,22 @@ namespace EDDemo.Estructuras_No_Lineales
 
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        private void btnPodar_Click(object sender, EventArgs e)
         {
-            miArbol = null;
-            miRaiz = null;
-            miArbol = new ArbolBusqueda();
+            // Verifica si el árbol está vacío
+            miRaiz = miArbol.RegresaRaiz();
+            if (miRaiz == null)
+            {
+                MessageBox.Show("El árbol está vacío");
+                return;
+            }
+
+            // Realiza la poda del árbol
+            miArbol.PodarArbol(ref miRaiz);
+
+            // Actualiza la visualización del árbol en el formulario
+            miArbol.strArbol = "";
             txtArbol.Text = "";
-            txtDato.Text = "";
             lblRecorridoPreOrden.Text = "";
             lblRecorridoInOrden.Text = "";
             lblRecorridoPostOrden.Text = "";
@@ -74,21 +83,21 @@ namespace EDDemo.Estructuras_No_Lineales
             miRaiz = miArbol.RegresaRaiz();
             if (miRaiz == null)
             {
-                MessageBox.Show("El arbol esta vacio");
+                MessageBox.Show("El árbol está vacío");
                 return;
             }
 
             StringBuilder b = new StringBuilder();
-            b.Append("digraph G { node [shape=\"circle\"]; " + Environment.NewLine);
+
+            b.Append("digraph G { node [shape=\"circle\"]; rankdir=LR; " + Environment.NewLine);
             b.Append(miArbol.ToDot(miRaiz));
             b.Append("}");
             graphVizString = b.ToString();
 
-            //graphVizString = @" digraph g{ label=""Graph""; labelloc=top;labeljust=left;}";
-            //graphVizString = @"digraph Arbol{Raiz->60; 60->40. 60->90; 40->34; 40->50;}";
+            // Genera la imagen del arbol
             Bitmap bm = FileDotEngine.Run(graphVizString);
 
-
+            // Muestra la gráfica en el formulario
             frmGrafica graf = new frmGrafica();
             graf.ActualizaGrafica(bm);
             graf.MdiParent = this.MdiParent;
@@ -106,6 +115,12 @@ namespace EDDemo.Estructuras_No_Lineales
             if (miRaiz == null)
             {
                 lblRecorridoPreOrden.Text = "El arbol esta vacio";
+                lblRecorridoInOrden.Text = "El arbol esta vacio";
+                lblRecorridoPostOrden1.Text = "El arbol esta vacio";
+                lblAltura.Text = "El arbol esta vacio";
+                lblHojas.Text = "El arbol esta vacio";
+                lblArbolCompleto.Text = "El arbol esta vacio";
+                lblRecorridoNiveles.Text = "El arbol esta vacio";
                 return;
             }
             lblRecorridoPreOrden.Text = "";
@@ -136,12 +151,35 @@ namespace EDDemo.Estructuras_No_Lineales
 
             if (miRaiz == null)
             {
-                lblRecorridoPostOrden.Text = "El arbol esta vacio";
+                lblRecorridoPostOrden1.Text = "El arbol esta vacio";
                 return;
             }
-            lblRecorridoPostOrden.Text = "";
+            lblRecorridoPostOrden1.Text = "";
             miArbol.PostOrden(miRaiz);
-            lblRecorridoPostOrden.Text = miArbol.strRecorrido;
+            lblRecorridoPostOrden1.Text = miArbol.strRecorrido;
+
+            //Calcular y mostrar la altura del árbol
+            int altura = miArbol.ObtenerAltura(miRaiz);
+            lblAltura.Text = altura.ToString();
+
+            // Contar las hojas del árbol
+            int numeroHojas = miArbol.ContarHojas(miRaiz);
+            lblHojas.Text = numeroHojas.ToString();
+
+            // Contar los nodos del árbol
+            int numeroNodos = miArbol.ContarNodos(miRaiz);
+            lblNodos.Text = numeroNodos.ToString();
+
+            // Verificar si el árbol es binario lleno
+            bool esLleno = miArbol.EsArbolLleno(miRaiz);
+            lblArbolLleno.Text = (esLleno ? "Sí" : "No");
+
+            // Verificar si el árbol es completo
+            bool esCompleto = miArbol.EsCompleto(miRaiz);
+            lblArbolCompleto.Text = esCompleto ? "Sí" : "No";
+
+            //Mostrar el recorrido por niveles
+            lblRecorridoNiveles.Text = miArbol.RecorridoPorNiveles(miRaiz);
         }
 
         private void btnCrearArbol_Click(object sender, EventArgs e)
@@ -202,6 +240,58 @@ namespace EDDemo.Estructuras_No_Lineales
             {
                 MessageBox.Show("Por favor, ingrese un número válido.");
             }
+        }
+
+        private void btnEliminarPredecesor_Click(object sender, EventArgs e)
+        {
+            int valor;
+            if (int.TryParse(txtDato.Text, out valor))
+            {
+                miRaiz = miArbol.RegresaRaiz();
+                miArbol.EliminarPredecesor(valor, ref miRaiz);
+
+                // Actualiza la visualización del árbol en el formulario
+                miArbol.strArbol = "";
+                miArbol.MuestraArbolAcostado(1, miRaiz);
+                txtArbol.Text = miArbol.strArbol;
+
+                txtDato.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un número válido.");
+            }
+        }
+
+        private void btnEliminarSucesor_Click(object sender, EventArgs e)
+        {
+            int valor;
+            if (int.TryParse(txtDato.Text, out valor))
+            {
+                miRaiz = miArbol.RegresaRaiz();
+                miArbol.EliminarSucesor(valor, ref miRaiz);
+
+                // Actualiza la visualización del árbol en el formulario
+                miArbol.strArbol = "";
+                miArbol.MuestraArbolAcostado(1, miRaiz);
+                txtArbol.Text = miArbol.strArbol;
+
+                txtDato.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un número válido.");
+            }
+        }
+
+        private void txtNodos_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblArbolLleno_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
