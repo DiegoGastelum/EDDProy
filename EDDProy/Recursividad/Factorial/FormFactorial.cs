@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Numerics;
 
-namespace WindowsFormsApp1
+namespace EDDemo
 {
     public partial class FormFactorial : Form
     {

@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Numerics; // Necesario para BigInteger
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace EDDemo
 {
     public partial class FormExponente : Form
     {

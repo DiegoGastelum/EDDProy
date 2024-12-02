@@ -11,7 +11,6 @@ using EDDemo.Búsqueda;
 using EDDemo.Estructuras_No_Lineales;
 using EDDEMO;
 using QuickSortApp;
-using WindowsFormsApp1;
 
 namespace EDDemo
 {
@@ -127,8 +126,8 @@ namespace EDDemo
 
         private void búsquedaBinariaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            WindowsFormsApp1.FormBusqBinaria form6 = new WindowsFormsApp1.FormBusqBinaria();
-            form6.Show();
+            FormBusqBinaria formBusq = new FormBusqBinaria();
+            formBusq.Show();
         }
 
         private void torreDeHanoiToolStripMenuItem_Click(object sender, EventArgs e)
