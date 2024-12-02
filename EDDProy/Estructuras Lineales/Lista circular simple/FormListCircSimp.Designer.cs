@@ -1,6 +1,6 @@
 ﻿namespace EDDEMO
 {
-    partial class Form13
+    partial class FormListCircSimp
     {
         /// <summary>
         /// Required designer variable.
@@ -214,7 +214,7 @@
             this.buttonElimUlt3.UseVisualStyleBackColor = false;
             this.buttonElimUlt3.Click += new System.EventHandler(this.buttonElimUlt3_Click);
             // 
-            // Form13
+            // FormListCircSimp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -234,8 +234,8 @@
             this.Controls.Add(this.textBoxElemento2);
             this.Controls.Add(this.textBoxListaCirc);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form13";
-            this.Text = "Form13";
+            this.Name = "FormListCircSimp";
+            this.Text = "Lista Circular Simple";
             this.Load += new System.EventHandler(this.Form13_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

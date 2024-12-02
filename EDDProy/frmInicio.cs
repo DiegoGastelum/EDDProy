@@ -11,6 +11,7 @@ using EDDemo.Búsqueda;
 using EDDemo.Estructuras_No_Lineales;
 using EDDEMO;
 using QuickSortApp;
+using WindowsFormsApp1;
 
 namespace EDDemo
 {
@@ -57,25 +58,25 @@ namespace EDDemo
 
         private void ColasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form10 form10 = new Form10();
+            FormColas form10 = new FormColas();
             form10.Show();
         }
 
         private void listasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form11 form11 = new Form11();
+            FormListSimp form11 = new FormListSimp();
             form11.Show();
         }
 
         private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form12 form12 = new Form12();
+            FormListDoble form12 = new FormListDoble();
             form12.Show();
         }
 
         private void listaCircularToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form13 form13 = new Form13();
+            FormListCircSimp form13 = new FormListCircSimp();
             form13.Show();
         }
 
@@ -93,8 +94,47 @@ namespace EDDemo
 
         private void binariaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            FormBusqBinaria formBusqBinaria = new FormBusqBinaria();
+            Búsqueda.FormBusqBinaria formBusqBinaria = new Búsqueda.FormBusqBinaria();
             formBusqBinaria.Show();
+        }
+
+        private void recursividadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void factorialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormFactorial form2 = new FormFactorial();  
+            form2.Show();
+        }
+        private void exponenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormExponente form3 = new FormExponente();
+            form3.Show();
+        }
+
+        private void sumarElementosDeUnArregloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormSumarElementos form4 = new FormSumarElementos();
+            form4.Show();
+        }
+
+        private void secuenciaDeFibonacciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormFibonacci form5 = new FormFibonacci();
+            form5.Show();
+        }
+
+        private void búsquedaBinariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WindowsFormsApp1.FormBusqBinaria form6 = new WindowsFormsApp1.FormBusqBinaria();
+            form6.Show();
+        }
+
+        private void torreDeHanoiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHanoi form7 = new FormHanoi();
+            form7.Show();
         }
     }
 }

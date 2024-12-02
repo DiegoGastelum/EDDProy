@@ -92,7 +92,7 @@ namespace EDDemo
             this.Controls.Add(this.textBoxMostrarPila);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPilas";
-            this.Text = "frmPilas";
+            this.Text = "Pilas";
             this.Load += new System.EventHandler(this.frmPilas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

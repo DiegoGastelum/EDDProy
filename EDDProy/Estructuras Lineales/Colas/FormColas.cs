@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace EDDEMO
 {
-    public partial class Form10 : Form
+    public partial class FormColas : Form
     {
         // Nodo que representa cada elemento de la cola
         private class Nodo
@@ -21,7 +21,7 @@ namespace EDDEMO
         private Nodo frente; // Nodo al frente de la cola (cabeza)
         private Nodo final;  // Nodo al final de la cola
 
-        public Form10()
+        public FormColas()
         {
             InitializeComponent(); // Inicializa los componentes del formulario
             frente = null; // Inicializa la cola como vacía

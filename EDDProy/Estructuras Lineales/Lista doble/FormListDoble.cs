@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace EDDEMO
 {
-    public partial class Form12 : Form
+    public partial class FormListDoble : Form
     {
-        public Form12()
+        public FormListDoble()
         {
             InitializeComponent();
         }

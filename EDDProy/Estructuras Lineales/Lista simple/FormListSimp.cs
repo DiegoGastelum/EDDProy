@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace EDDEMO
 {
-    public partial class Form11 : Form
+    public partial class FormListSimp : Form
     {
-        public Form11()
+        public FormListSimp()
         {
             InitializeComponent(); // Inicializa los componentes del formulario
         }

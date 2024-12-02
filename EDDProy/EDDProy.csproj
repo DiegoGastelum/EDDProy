@@ -55,11 +55,11 @@
     <Compile Include="Búsqueda\FormBusqBinaria.Designer.cs">
       <DependentUpon>FormBusqBinaria.cs</DependentUpon>
     </Compile>
-    <Compile Include="Estructuras Lineales\Colas\Form10.cs">
+    <Compile Include="Estructuras Lineales\Colas\FormColas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Estructuras Lineales\Colas\Form10.Designer.cs">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <Compile Include="Estructuras Lineales\Colas\FormColas.Designer.cs">
+      <DependentUpon>FormColas.cs</DependentUpon>
     </Compile>
     <Compile Include="Estructuras Lineales\Lista circular doble\FormListCircDoble.cs">
       <SubType>Form</SubType>
@@ -67,23 +67,23 @@
     <Compile Include="Estructuras Lineales\Lista circular doble\FormListCircDoble.Designer.cs">
       <DependentUpon>FormListCircDoble.cs</DependentUpon>
     </Compile>
-    <Compile Include="Estructuras Lineales\Lista circular simple\Form13.cs">
+    <Compile Include="Estructuras Lineales\Lista circular simple\FormListCircSimp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Estructuras Lineales\Lista circular simple\Form13.Designer.cs">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <Compile Include="Estructuras Lineales\Lista circular simple\FormListCircSimp.Designer.cs">
+      <DependentUpon>FormListCircSimp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Estructuras Lineales\Lista doble\Form12.cs">
+    <Compile Include="Estructuras Lineales\Lista doble\FormListDoble.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Estructuras Lineales\Lista doble\Form12.Designer.cs">
-      <DependentUpon>Form12.cs</DependentUpon>
+    <Compile Include="Estructuras Lineales\Lista doble\FormListDoble.Designer.cs">
+      <DependentUpon>FormListDoble.cs</DependentUpon>
     </Compile>
-    <Compile Include="Estructuras Lineales\Lista simple\Form11.cs">
+    <Compile Include="Estructuras Lineales\Lista simple\FormListSimp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Estructuras Lineales\Lista simple\Form11.Designer.cs">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <Compile Include="Estructuras Lineales\Lista simple\FormListSimp.Designer.cs">
+      <DependentUpon>FormListSimp.cs</DependentUpon>
     </Compile>
     <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
     <Compile Include="Estructuras No Lineales\frmArboles.cs">
@@ -120,23 +120,59 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursividad\Búsqueda binaria\FormBusqBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Búsqueda binaria\FormBusqBinaria.Designer.cs">
+      <DependentUpon>FormBusqBinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Exponente\FormExponente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Exponente\FormExponente.Designer.cs">
+      <DependentUpon>FormExponente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Factorial\FormFactorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Factorial\FormFactorial.Designer.cs">
+      <DependentUpon>FormFactorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Secuencia de Fibonacci\FormFibonacci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Secuencia de Fibonacci\FormFibonacci.Designer.cs">
+      <DependentUpon>FormFibonacci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Sumar elementos\FormSumarElementos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Sumar elementos\FormSumarElementos.Designer.cs">
+      <DependentUpon>FormSumarElementos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\Torre de Hanoi\FormHanoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\Torre de Hanoi\FormHanoi.Designer.cs">
+      <DependentUpon>FormHanoi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Búsqueda\FormBusqBinaria.resx">
       <DependentUpon>FormBusqBinaria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Estructuras Lineales\Colas\Form10.resx">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <EmbeddedResource Include="Estructuras Lineales\Colas\FormColas.resx">
+      <DependentUpon>FormColas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras Lineales\Lista circular doble\FormListCircDoble.resx">
       <DependentUpon>FormListCircDoble.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Estructuras Lineales\Lista circular simple\Form13.resx">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <EmbeddedResource Include="Estructuras Lineales\Lista circular simple\FormListCircSimp.resx">
+      <DependentUpon>FormListCircSimp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Estructuras Lineales\Lista doble\Form12.resx">
-      <DependentUpon>Form12.cs</DependentUpon>
+    <EmbeddedResource Include="Estructuras Lineales\Lista doble\FormListDoble.resx">
+      <DependentUpon>FormListDoble.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Estructuras Lineales\Lista simple\Form11.resx">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <EmbeddedResource Include="Estructuras Lineales\Lista simple\FormListSimp.resx">
+      <DependentUpon>FormListSimp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>
@@ -162,6 +198,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Recursividad\Búsqueda binaria\FormBusqBinaria.resx">
+      <DependentUpon>FormBusqBinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Exponente\FormExponente.resx">
+      <DependentUpon>FormExponente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Factorial\FormFactorial.resx">
+      <DependentUpon>FormFactorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Secuencia de Fibonacci\FormFibonacci.resx">
+      <DependentUpon>FormFibonacci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Sumar elementos\FormSumarElementos.resx">
+      <DependentUpon>FormSumarElementos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\Torre de Hanoi\FormHanoi.resx">
+      <DependentUpon>FormHanoi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="external\config6">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -478,8 +532,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Estructuras Lineales\Clases\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

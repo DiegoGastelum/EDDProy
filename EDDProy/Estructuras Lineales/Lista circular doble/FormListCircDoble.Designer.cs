@@ -234,7 +234,7 @@
             this.Controls.Add(this.textBoxElemento3);
             this.Controls.Add(this.textBoxListaCirc);
             this.Name = "FormListCircDoble";
-            this.Text = "FormListCircDoble";
+            this.Text = "Lista Circular Doble";
             this.Load += new System.EventHandler(this.FormListCircDoble_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
