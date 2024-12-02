@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Búsqueda\FormBusqBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Búsqueda\FormBusqBinaria.Designer.cs">
+      <DependentUpon>FormBusqBinaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras Lineales\Colas\Form10.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,8 +112,17 @@
       <DependentUpon>frmPilas.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
+    <Compile Include="Ordenamiento\Formquicksort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordenamiento\Formquicksort.Designer.cs">
+      <DependentUpon>Formquicksort.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Búsqueda\FormBusqBinaria.resx">
+      <DependentUpon>FormBusqBinaria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras Lineales\Colas\Form10.resx">
       <DependentUpon>Form10.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras Lineales\Pilas\frmPilas.resx">
       <DependentUpon>frmPilas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordenamiento\Formquicksort.resx">
+      <DependentUpon>Formquicksort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

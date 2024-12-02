@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EDDemo.Búsqueda;
 using EDDemo.Estructuras_No_Lineales;
 using EDDEMO;
+using QuickSortApp;
 
 namespace EDDemo
 {
@@ -81,6 +83,18 @@ namespace EDDemo
         {
             FormListCircDoble formListCircDoble = new FormListCircDoble();
             formListCircDoble.Show();
+        }
+
+        private void quicksortToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Formquicksort formquicksort = new Formquicksort();
+            formquicksort.Show();
+        }
+
+        private void binariaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FormBusqBinaria formBusqBinaria = new FormBusqBinaria();
+            formBusqBinaria.Show();
         }
     }
 }
