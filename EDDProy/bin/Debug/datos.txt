@@ -1,0 +1,10 @@
+1,Manzana
+2,Plátano
+3,Cereza
+4,Durazno
+5,Uva
+6,Pera
+7,Naranja
+8,Melón
+9,Sandía
+10,Mango
