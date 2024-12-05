@@ -81,6 +81,11 @@ namespace BusquedaHash
         {
 
         }
+
+        private void FormHash_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class HashTable

@@ -176,6 +176,7 @@
             this.Controls.Add(this.btnBuscar);
             this.Name = "FormHash";
             this.Text = "Hash";
+            this.Load += new System.EventHandler(this.FormHash_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

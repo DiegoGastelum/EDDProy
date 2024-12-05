@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusquedaHash;
-using EDDemo.Búsqueda;
 using EDDemo.Estructuras_No_Lineales;
 using EDDEMO;
 using QuickSortApp;
@@ -94,8 +93,8 @@ namespace EDDemo
 
         private void binariaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Búsqueda.FormBusqBinaria2 formBusqBinaria = new Búsqueda.FormBusqBinaria2();
-            formBusqBinaria.Show();
+            FormBusqBinaria2 formbusq = new FormBusqBinaria2();
+            formbusq.Show();
         }
 
         private void recursividadToolStripMenuItem_Click(object sender, EventArgs e)
