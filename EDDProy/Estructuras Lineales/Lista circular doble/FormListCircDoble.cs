@@ -8,7 +8,7 @@ namespace EDDEMO
     {
         public FormListCircDoble()
         {
-            InitializeComponent(); // Inicializa los componentes del formulario
+            InitializeComponent();
         }
 
         private void FormListCircDoble_Load(object sender, EventArgs e)
@@ -76,7 +76,7 @@ namespace EDDEMO
                     return;
                 }
 
-                if (cabeza == cola) // Si solo hay un nodo
+                if (cabeza == cola) 
                 {
                     cabeza = null;
                     cola = null;

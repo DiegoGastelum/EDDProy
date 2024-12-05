@@ -49,11 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Búsqueda\FormBusqBinaria.cs">
+    <Compile Include="Búsqueda\FormHash.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Búsqueda\FormBusqBinaria.Designer.cs">
-      <DependentUpon>FormBusqBinaria.cs</DependentUpon>
+    <Compile Include="Búsqueda\FormHash.Designer.cs">
+      <DependentUpon>FormHash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Búsqueda\FormBusqBinaria2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Búsqueda\FormBusqBinaria2.Designer.cs">
+      <DependentUpon>FormBusqBinaria2.cs</DependentUpon>
     </Compile>
     <Compile Include="Estructuras Lineales\Colas\FormColas.cs">
       <SubType>Form</SubType>
@@ -156,8 +162,11 @@
     <Compile Include="Recursividad\Torre de Hanoi\FormHanoi.Designer.cs">
       <DependentUpon>FormHanoi.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Búsqueda\FormBusqBinaria.resx">
-      <DependentUpon>FormBusqBinaria.cs</DependentUpon>
+    <EmbeddedResource Include="Búsqueda\FormBusqBinaria2.resx">
+      <DependentUpon>FormBusqBinaria2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Búsqueda\FormHash.resx">
+      <DependentUpon>FormHash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras Lineales\Colas\FormColas.resx">
       <DependentUpon>FormColas.cs</DependentUpon>
@@ -237,6 +246,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\datos.txt" />
     <Content Include="external\acyclic.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

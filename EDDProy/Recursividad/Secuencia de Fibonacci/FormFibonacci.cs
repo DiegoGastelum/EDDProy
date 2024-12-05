@@ -23,6 +23,7 @@ namespace EDDemo
 
         }
 
+        //Botón para verificar si el número es correcto y mostrar los resultados
         private void button1_Click(object sender, EventArgs e)
         {
             // Leer el número de la caja de texto
@@ -49,6 +50,7 @@ namespace EDDemo
             labelOperations3.Text = $"Total de operaciones: {operations}";
         }
 
+        //Método recursivo para calcular la serie de Fibonacci
         private long FibonacciTailRecursive(int n, long a, long b, ref int operations)
         {
             // Incrementar el contador de operaciones

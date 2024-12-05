@@ -84,7 +84,7 @@ namespace EDDEMO
                         cabeza.Anterior = nuevoNodo; // Conectar la cabeza anterior con el nuevo nodo
                     }
                     cabeza = nuevoNodo; // Actualizar la cabeza
-                    if (cola == null) // Si la lista estaba vacía
+                    if (cola == null) 
                     {
                         cola = nuevoNodo; // Actualizar cola
                     }
@@ -230,7 +230,7 @@ namespace EDDEMO
                     resultado.AppendLine(actual.Valor); // Agrega cada elemento a la cadena
                     actual = actual.Siguiente; // Mover al siguiente nodo
                 }
-                return resultado.ToString(); // Retorna la representación en cadena de la lista
+                return resultado.ToString(); // Retorna la lista
             }
 
             // Método para vaciar la lista
@@ -244,7 +244,7 @@ namespace EDDEMO
 
         private ListaDoble lista = new ListaDoble();
 
-        // Método para actualizar el contenido del TextBox con los elementos
+        // Método para actualizar el TextBox con los elementos
         private void ActualizarLista()
         {
             textBoxLista1.Text = lista.Mostrar(); // Muestra los elementos en el TextBox
@@ -266,7 +266,7 @@ namespace EDDEMO
 
             lista.Agregar(nuevoElemento); // Agrega el elemento a la lista
             ActualizarLista(); // Actualiza el TextBox
-            textBoxElemento1.Clear(); // Limpia el TextBox de entrada
+            textBoxElemento1.Clear(); // Limpia el TextBox 
         }
 
         private void buttonVaciarLista1_Click_1(object sender, EventArgs e)
@@ -300,8 +300,8 @@ namespace EDDEMO
             {
                 lista.InsertarEnPosicion(nuevoElemento, posicion); // Inserta el elemento en la posición indicada
                 ActualizarLista(); // Actualiza el TextBox
-                textBoxElemento1.Clear(); // Limpia el TextBox de entrada
-                textBoxPosicion1.Clear(); // Limpia el TextBox de posición
+                textBoxElemento1.Clear(); // Limpia el TextBox 
+                textBoxPosicion1.Clear(); // Limpia el TextBox 
             }
             else
             {
@@ -315,7 +315,7 @@ namespace EDDEMO
             {
                 lista.EliminarEnPosicion(posicion); // Elimina el elemento en la posición indicada
                 ActualizarLista(); // Actualiza el TextBox
-                textBoxPosicion1.Clear(); // Limpia el TextBox de posición
+                textBoxPosicion1.Clear(); // Limpia el TextBox 
             }
             else
             {

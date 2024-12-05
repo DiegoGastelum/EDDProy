@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Numerics; // Necesario para BigInteger
+using System.Numerics; 
 using System.Windows.Forms;
 
 namespace EDDemo
@@ -14,8 +14,8 @@ namespace EDDemo
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            // Cualquier inicialización necesaria cuando se carga el formulario
         }
+       //Botón para calcular el resultado
         private void buttonCalculate1_Click_1(object sender, EventArgs e)
         {
             // Leer el número base y el exponente de las cajas de diálogo

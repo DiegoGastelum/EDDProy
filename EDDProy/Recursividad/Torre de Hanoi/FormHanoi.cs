@@ -23,6 +23,7 @@ namespace EDDemo
 
         }
 
+        //Botón para ordenar los discos y mostrar los resultados
         private void button1_Click(object sender, EventArgs e)
         {
             // Leer el número de discos desde el cuadro de texto

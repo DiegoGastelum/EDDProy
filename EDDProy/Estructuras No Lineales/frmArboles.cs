@@ -23,14 +23,14 @@ namespace EDDemo.Estructuras_No_Lineales
 {
     public partial class frmArboles : Form
     {
-        ArbolBusqueda miArbol;
-        NodoBinario miRaiz;
+        ArbolBusqueda miArbol; // Instancia del árbol binario
+        NodoBinario miRaiz; // Nodo raíz del árbol
 
         public frmArboles()
         {
             InitializeComponent();
             miArbol = new ArbolBusqueda();
-            miRaiz = null;
+            miRaiz = null; // Inicializa la raíz del árbol como null
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
@@ -55,6 +55,7 @@ namespace EDDemo.Estructuras_No_Lineales
 
         }
 
+        //Botón para podar el árbol binario
         private void btnPodar_Click(object sender, EventArgs e)
         {
             // Verifica si el árbol está vacío
@@ -76,6 +77,7 @@ namespace EDDemo.Estructuras_No_Lineales
             lblRecorridoPostOrden.Text = "";
         }
 
+        //Botón para graficar el árbol binario
         private void btnGrafica_Click(object sender, EventArgs e)
         {
             String graphVizString;
@@ -104,7 +106,7 @@ namespace EDDemo.Estructuras_No_Lineales
             graf.Show();
         }
 
-
+        //Botón para recorrer el árbol binario
         private void btnRecorrer_Click(object sender, EventArgs e)
         {
             //Recorrido en PreOrden
@@ -182,9 +184,10 @@ namespace EDDemo.Estructuras_No_Lineales
             lblRecorridoNiveles.Text = miArbol.RecorridoPorNiveles(miRaiz);
         }
 
+        //Botón para crear el árbol binario
         private void btnCrearArbol_Click(object sender, EventArgs e)
         {
-            //Limpiamos los objetos y clases del anterior arbol
+            //Limpiamos los objetos y clases del anterior árbol
             miArbol = null;
             miRaiz = null;
             miArbol = new ArbolBusqueda();
@@ -217,6 +220,7 @@ namespace EDDemo.Estructuras_No_Lineales
 
         }
 
+        //Botón para buscar un elemento del árbol
         private void bttnBuscar_Click(object sender, EventArgs e)
         {
             int valor;
@@ -238,10 +242,11 @@ namespace EDDemo.Estructuras_No_Lineales
             }
             else
             {
-                MessageBox.Show("Por favor, ingrese un número válido.");
+                MessageBox.Show("Ingresa un número válido.");
             }
         }
 
+        //Botón para eliminar el elemento predecesor
         private void btnEliminarPredecesor_Click(object sender, EventArgs e)
         {
             int valor;
@@ -259,10 +264,11 @@ namespace EDDemo.Estructuras_No_Lineales
             }
             else
             {
-                MessageBox.Show("Por favor, ingrese un número válido.");
+                MessageBox.Show("Ingresa un número válido.");
             }
         }
 
+        //Botón para eliminar el elemento sucesor
         private void btnEliminarSucesor_Click(object sender, EventArgs e)
         {
             int valor;

@@ -8,7 +8,7 @@ namespace EDDEMO
     {
         public FormListCircSimp()
         {
-            InitializeComponent(); // Inicializa los componentes del formulario
+            InitializeComponent(); 
         }
 
         private void Form13_Load(object sender, EventArgs e)
@@ -38,16 +38,16 @@ namespace EDDEMO
             public ListaCircular()
             {
                 cabeza = null; // Inicializa la cabeza como null
-                tamaño = 0; // Inicializa el tamaño en 0
+                tamaño = 0; 
             }
 
             // Método para agregar un elemento al final 
             public void Agregar(string valor)
             {
-                Nodo nuevoNodo = new Nodo(valor); // Crea un nuevo nodo
+                Nodo nuevoNodo = new Nodo(valor); 
                 if (cabeza == null)
                 {
-                    cabeza = nuevoNodo; // Si la lista está vacía, el nuevo nodo es la cabeza
+                    cabeza = nuevoNodo; // El nuevo nodo es la cabeza si la lista está vacía
                     nuevoNodo.Siguiente = cabeza; // El siguiente del nuevo nodo apunta a sí mismo
                 }
                 else
@@ -66,9 +66,9 @@ namespace EDDEMO
             // Método para eliminar el último elemento de la lista
             public void EliminarUltimo()
             {
-                if (cabeza == null) // Si la lista está vacía
+                if (cabeza == null) 
                 {
-                    MessageBox.Show("La lista está vacía."); // Mensaje de error
+                    MessageBox.Show("La lista está vacía."); 
                     return;
                 }
 
@@ -91,7 +91,7 @@ namespace EDDEMO
             // Método para eliminar el primer elemento 
             public void EliminarPrimero()
             {
-                if (cabeza == null) // Si la lista está vacía
+                if (cabeza == null) 
                 {
                     MessageBox.Show("La lista está vacía.");
                     return;
@@ -117,7 +117,7 @@ namespace EDDEMO
             // Método para eliminar un elemento en una posición específica
             public void EliminarEnPosicion(int posicion)
             {
-                if (cabeza == null) // Si la lista está vacía
+                if (cabeza == null) 
                 {
                     MessageBox.Show("La lista está vacía."); 
                     return;
@@ -158,7 +158,7 @@ namespace EDDEMO
 
                 if (posicion == 1) // Si se inserta al principio
                 {
-                    if (cabeza == null) // Si la lista está vacía
+                    if (cabeza == null) 
                     {
                         cabeza = nuevoNodo; // El nuevo nodo es la cabeza
                         nuevoNodo.Siguiente = cabeza; // El siguiente del nuevo nodo apunta a sí mismo
@@ -236,7 +236,7 @@ namespace EDDEMO
                     temp = temp.Siguiente; // Avanza al siguiente nodo
                 } while (temp != cabeza); // Continua hasta que regrese a la cabeza
 
-                return resultado.ToString(); // Retorna la representación en cadena de la lista
+                return resultado.ToString(); // Retorna la representación de la lista
             }
         }
 
@@ -259,7 +259,7 @@ namespace EDDEMO
 
             lista.Agregar(nuevoElemento); // Agrega el elemento a la lista
             ActualizarLista(); // Actualiza el TextBox
-            textBoxElemento2.Clear(); // Limpia el TextBox de entrada
+            textBoxElemento2.Clear(); // Limpia el TextBox 
         }
 
         private void buttonVaciarLista2_Click(object sender, EventArgs e)
@@ -286,7 +286,7 @@ namespace EDDEMO
             {
                 lista.EliminarEnPosicion(posicion); // Elimina el elemento en la posición indicada
                 ActualizarLista(); // Actualiza el TextBox
-                textBoxPosicion2.Clear(); // Limpia el TextBox de posición
+                textBoxPosicion2.Clear(); // Limpia el TextBox 
             }
             else
             {
@@ -307,8 +307,8 @@ namespace EDDEMO
             {
                 lista.InsertarEnPosicion(nuevoElemento, posicion); // Inserta el elemento en la posición indicada
                 ActualizarLista(); // Actualiza el TextBox
-                textBoxElemento2.Clear(); // Limpia el TextBox de entrada
-                textBoxPosicion2.Clear(); // Limpia el TextBox de posición
+                textBoxElemento2.Clear(); // Limpia el TextBox 
+                textBoxPosicion2.Clear(); // Limpia el TextBox 
             }
             else
             {

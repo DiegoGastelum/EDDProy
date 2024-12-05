@@ -66,7 +66,7 @@ namespace EDDemo
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(911, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(911, 30);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -136,7 +136,7 @@ namespace EDDemo
             this.listaCircularToolStripMenuItem,
             this.listaCircularDobleToolStripMenuItem});
             this.estructurasLinealesToolStripMenuItem.Name = "estructurasLinealesToolStripMenuItem";
-            this.estructurasLinealesToolStripMenuItem.Size = new System.Drawing.Size(148, 24);
+            this.estructurasLinealesToolStripMenuItem.Size = new System.Drawing.Size(148, 28);
             this.estructurasLinealesToolStripMenuItem.Text = "Estructuras lineales";
             this.estructurasLinealesToolStripMenuItem.Click += new System.EventHandler(this.estructurasLinealesToolStripMenuItem_Click);
             // 
@@ -157,15 +157,15 @@ namespace EDDemo
             // listasToolStripMenuItem
             // 
             this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
-            this.listasToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
-            this.listasToolStripMenuItem.Text = "Listas";
+            this.listasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.listasToolStripMenuItem.Text = "Lista Simple";
             this.listasToolStripMenuItem.Click += new System.EventHandler(this.listasToolStripMenuItem_Click);
             // 
             // listaSimpleToolStripMenuItem
             // 
             this.listaSimpleToolStripMenuItem.Name = "listaSimpleToolStripMenuItem";
-            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
-            this.listaSimpleToolStripMenuItem.Text = "Lista simple";
+            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.listaSimpleToolStripMenuItem.Text = "Lista Doble";
             this.listaSimpleToolStripMenuItem.Click += new System.EventHandler(this.listaSimpleToolStripMenuItem_Click);
             // 
             // listaCircularToolStripMenuItem
@@ -219,7 +219,7 @@ namespace EDDemo
             this.binariaToolStripMenuItem,
             this.hashToolStripMenuItem});
             this.búsquedaToolStripMenuItem.Name = "búsquedaToolStripMenuItem";
-            this.búsquedaToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.búsquedaToolStripMenuItem.Size = new System.Drawing.Size(88, 28);
             this.búsquedaToolStripMenuItem.Text = "Búsqueda";
             // 
             // binariaToolStripMenuItem
@@ -232,8 +232,9 @@ namespace EDDemo
             // hashToolStripMenuItem
             // 
             this.hashToolStripMenuItem.Name = "hashToolStripMenuItem";
-            this.hashToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
+            this.hashToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.hashToolStripMenuItem.Text = "Hash";
+            this.hashToolStripMenuItem.Click += new System.EventHandler(this.hashToolStripMenuItem_Click);
             // 
             // frmInicio
             // 

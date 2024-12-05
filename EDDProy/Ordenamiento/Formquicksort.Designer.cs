@@ -149,6 +149,7 @@
             this.Controls.Add(this.lblArregloOrdenado);
             this.Name = "Formquicksort";
             this.Text = "Quicksort";
+            this.Load += new System.EventHandler(this.Formquicksort_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

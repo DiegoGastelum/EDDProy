@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EDDemo.Búsqueda
 {
-    public partial class FormBusqBinaria : Form
+    public partial class FormBusqBinaria2 : Form
     {
-        public FormBusqBinaria()
+        public FormBusqBinaria2()
         {
             InitializeComponent();
         }

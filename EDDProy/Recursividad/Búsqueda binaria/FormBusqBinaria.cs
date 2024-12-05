@@ -28,7 +28,7 @@ namespace EDDemo
             // Leer el número a buscar y el arreglo desde las cajas de texto
             if (!int.TryParse(textBoxSearchValue.Text, out int searchValue))
             {
-                MessageBox.Show("Por favor, ingrese un número válido para buscar.");
+                MessageBox.Show("Ingresa un número válido para buscar.");
                 return;
             }
 

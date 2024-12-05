@@ -27,7 +27,7 @@ namespace EDDemo
         {
 
         }
-
+        //Botón para mostrar los resultados de las operaciones
         private void buttonSumTailRecursive_Click_1(object sender, EventArgs e)
         {
             // Leer el texto de la caja de texto y separar los números por comas
@@ -65,6 +65,7 @@ namespace EDDemo
             }
         }
 
+        //Método recursivo para sumar los elementos del arreglo
         private int SumArrayTailRecursive(int[] numbers, int count, int accumulator, ref int operations)
         {
             // Incrementar el contador de operaciones

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusquedaHash;
 using EDDemo.Búsqueda;
 using EDDemo.Estructuras_No_Lineales;
 using EDDEMO;
@@ -93,7 +94,7 @@ namespace EDDemo
 
         private void binariaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            Búsqueda.FormBusqBinaria formBusqBinaria = new Búsqueda.FormBusqBinaria();
+            Búsqueda.FormBusqBinaria2 formBusqBinaria = new Búsqueda.FormBusqBinaria2();
             formBusqBinaria.Show();
         }
 
@@ -134,6 +135,12 @@ namespace EDDemo
         {
             FormHanoi form7 = new FormHanoi();
             form7.Show();
+        }
+
+        private void hashToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHash formHash = new FormHash();
+            formHash.Show();
         }
     }
 }

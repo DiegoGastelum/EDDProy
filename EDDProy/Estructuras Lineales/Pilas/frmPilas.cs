@@ -60,13 +60,13 @@ namespace EDDemo
         // Método para vaciar la pila
         private void Vaciar()
         {
-            top = null; // Vacía la pila
+            top = null; 
         }
 
         // Método para actualizar la caja de texto y mostrar los elementos 
         private void RefreshPila()
         {
-            textBoxMostrarPila.Clear(); // Limpia el TextBox que muestra la pila
+            textBoxMostrarPila.Clear(); // Limpia el TextBox 
             textBoxMostrarPila.AppendText(MostrarElementos(top)); // Agrega los elementos al TextBox
         }
 
@@ -106,6 +106,7 @@ namespace EDDemo
             RefreshPila(); // Actualiza el TextBox con los elementos restantes
         }
 
+        //Botón para insertar un valor
         private void bttnInsertar_Click(object sender, EventArgs e)
         {
             string valor = textBoxInsertar.Text;
@@ -113,14 +114,14 @@ namespace EDDemo
             if (int.TryParse(valor, out int numero))
             {
                 Push(numero); // Inserta el número en la pila
-                RefreshPila(); // Actualiza el TextBox para mostrar los elementos actuales
+                RefreshPila(); // Actualiza el TextBox 
             }
             else
             {
-                MessageBox.Show("Ingrese un número válido."); // Mensaje de advertencia
+                MessageBox.Show("Ingrese un número válido."); 
             }
 
-            textBoxInsertar.Clear(); // Limpia el TextBox de entrada
+            textBoxInsertar.Clear(); // Limpia el TextBox
         }
 
         private void bttnVaciar_Click(object sender, EventArgs e)

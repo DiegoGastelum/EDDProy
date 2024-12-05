@@ -1,6 +1,6 @@
 ﻿namespace EDDemo.Búsqueda
 {
-    partial class FormBusqBinaria
+    partial class FormBusqBinaria2
     {
         /// <summary>
         /// Required designer variable.

@@ -8,7 +8,7 @@ namespace EDDEMO
     {
         public FormListSimp()
         {
-            InitializeComponent(); // Inicializa los componentes del formulario
+            InitializeComponent(); 
         }
 
         private void Form11_Load(object sender, EventArgs e)
@@ -33,12 +33,12 @@ namespace EDDEMO
         // Clase que representa la lista 
         public class ListaSimple
         {
-            private Nodo cabeza; // Nodo inicial (cabeza) de la lista
+            private Nodo cabeza; // Nodo inicial de la lista
 
             // Constructor que inicializa la lista como vacía
             public ListaSimple()
             {
-                cabeza = null; // Inicialmente la lista está vacía
+                cabeza = null; 
             }
 
             // Método para agregar un nuevo elemento al final
@@ -103,7 +103,7 @@ namespace EDDEMO
             // Método para eliminar un elemento en una posición
             public void EliminarEnPosicion(int posicion)
             {
-                if (posicion < 1 || cabeza == null) // Verificar si la posición es inválida o la lista está vacía
+                if (posicion < 1 || cabeza == null) // Verificar si la posición es inválida
                 {
                     MessageBox.Show("Posición inválida.");
                     return;
@@ -124,7 +124,7 @@ namespace EDDEMO
                     contador++;
                 }
 
-                if (actual.siguiente == null) // Verificar si la posición es inválida
+                if (actual.siguiente == null) 
                 {
                     MessageBox.Show("Posición inválida.");
                 }
@@ -161,7 +161,7 @@ namespace EDDEMO
             // Método para mostrar todos los elementos de la lista
             public string Mostrar()
             {
-                if (cabeza == null) // Si la lista está vacía
+                if (cabeza == null) 
                 {
                     return "La lista está vacía.";
                 }
@@ -227,7 +227,7 @@ namespace EDDEMO
 
         private ListaSimple lista = new ListaSimple();
 
-        // Método para actualizar el contenido del TextBox con los elementos
+        // Método para actualizar el TextBox con los elementos
         private void ActualizarLista()
         {
             textBoxLista.Text = lista.Mostrar(); 
@@ -244,7 +244,7 @@ namespace EDDEMO
 
             lista.Agregar(nuevoElemento); // Agrega el elemento a la lista
             ActualizarLista(); // Actualiza el TextBox
-            textBoxElemento.Clear(); // Limpia el campo de entrada
+            textBoxElemento.Clear(); // Limpia el TextBox
         }
 
         private void buttonVaciarLista_Click(object sender, EventArgs e)
@@ -271,7 +271,7 @@ namespace EDDEMO
             {
                 lista.EliminarEnPosicion(posicion); // Elimina el elemento en la posición indicada
                 ActualizarLista(); // Actualiza el TextBox
-                textBoxPosicion.Clear(); // Limpia el campo de posición
+                textBoxPosicion.Clear(); // Limpia el TextBox
             }
             else
             {
@@ -312,8 +312,8 @@ namespace EDDEMO
             {
                 lista.InsertarEnPosicion(nuevoElemento, posicion); // Insertar el elemento en la posición 
                 ActualizarLista(); // Actualizar el TextBox
-                textBoxElemento.Clear(); // Limpiar los campos de entrada
-                textBoxPosicion.Clear();
+                textBoxElemento.Clear(); // Limpiar el TextBox
+                textBoxPosicion.Clear(); // Limpiar el TextBox
             }
             else
             {

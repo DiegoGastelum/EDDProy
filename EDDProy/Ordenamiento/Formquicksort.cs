@@ -41,7 +41,7 @@ namespace QuickSortApp
             if (inf < j) QuickSort(A, inf, j);
             if (i < sup) QuickSort(A, i, sup);
         }
-
+        //Botón para generar el arreglo aleatorio
         private void btnGenerar_Click_1(object sender, EventArgs e)
         {
             // Generar un arreglo aleatorio con menos de 50 datos
@@ -114,6 +114,11 @@ namespace QuickSortApp
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Formquicksort_Load(object sender, EventArgs e)
         {
 
         }

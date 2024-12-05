@@ -23,19 +23,19 @@ namespace EDDemo
         {
 
         }
-
+        //Botón para verificar que los números sean válidos y mostrar los resultado
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
             {
                 // Leer el número de la caja de diálogo 
                 if (!int.TryParse(textBox2.Text, out int number) || number < 0)
                 {
-                    MessageBox.Show("Por favor, ingrese un número entero positivo.");
+                    MessageBox.Show("Ingresa un número entero positivo.");
                     return;
                 }
                 if (number >= 24)
                 {
-                    MessageBox.Show("El número debe ser 23 o menor para evitar problemas de desbordamiento.");
+                    MessageBox.Show("El número debe ser 23 o menor.");
                     return;
                 }
 
@@ -55,6 +55,7 @@ namespace EDDemo
                 labelOperations.Text = $"Total de operaciones: {operations}";
             }
         }
+        //Botón para calcular el factorial de manera recursiva
         private long CalculateFactorial(int number, ref int operations)
         {
             operations++;
